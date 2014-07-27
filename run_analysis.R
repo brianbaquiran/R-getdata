@@ -58,7 +58,9 @@ mean_std_names <- grep("mean|std",observation_names, value=TRUE)
 # Extract the subset of the data we're interested in
 mean_std_data <- full_data[,c("subject_id","activity_name",mean_std_names)]
 
-
-tidy<-ddply(mean_std_data,c("subject_id","activity_name"), function(xx) {
+# Use ddply and apply to compute the means of each combination of subject+activity
+tidy_data<-ddply(mean_std_data,c("subject_id","activity_name"), function(xx) {
         apply(xx[3:81],2,mean)
 })
+
+# write.table(tidy_data,"tidy_data.txt")
