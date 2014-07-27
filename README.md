@@ -11,4 +11,5 @@ R-getdata
     5. Since we are only interested in the mean and standard deviation measurements, a list of columns containing these measurements is built
     6. A subset of the data containing only the subject, activity name, and columns of interest is extracted
     7. The subset of data is summarized by subject and activity. Each measurement is averaged for each subject-activity combination.
+    8. The data frame *tidy_data* contains the summarized data.
 * Refer to the [Code Book](CodeBook.md) for a list of columns in the final data set.
