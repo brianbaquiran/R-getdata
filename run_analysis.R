@@ -60,6 +60,8 @@ mean_std_data <- full_data[,c("subject_id","activity_name",mean_std_names)]
 
 # Use ddply and apply to compute the means of each combination of subject+activity
 tidy_data<-ddply(mean_std_data,c("subject_id","activity_name"), function(xx) {
+        # columns 1-2 contain the subject_id and activity name 
+        # so we only apply mean to columns 3-81
         apply(xx[3:81],2,mean)
 })
 
