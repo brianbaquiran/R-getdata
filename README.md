@@ -1,4 +1,7 @@
 R-getdata
 =========
 
-Quizzes and notes for Coursera's Getting and Cleaning Data course
+### Course Project
+
+* [run_analysis.R](run_analysis.R) must be run one directory above the UCI HAR Dataset directory.
+* [Code Book](CodeBook.md)
