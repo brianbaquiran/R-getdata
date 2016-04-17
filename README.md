@@ -2,8 +2,8 @@ R-getdata
 =========
 
 ### Course Project - Tidy Data Set
-* The script does not download raw data. [Download the data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) from the project and unzip. It will create a UCI HAR Dataset directory, with subdirectories beneath.
 * [run_analysis.R](run_analysis.R) must be run one directory above the UCI HAR Dataset directory. It will perform the following actions: 
+    0. The script downloads [the zipped test and training dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) from the project and unzips it. It will create a UCI HAR Dataset directory, with subdirectories beneath.
     1. The script will load the list of activities and features used in the datasets
     2. There are two datasets included in the zip file: a training dataset and a test dataset. 
     3. For each of the two datasets included in the zip file, the script will load the subject list, activity list, and measurement data. These will be merged with the activity names to create two data frames. 
